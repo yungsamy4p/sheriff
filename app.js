@@ -21,11 +21,11 @@ document.getElementById('enlistForm').addEventListener('submit', async function 
   statusMsg.innerText = "";
 
   // ID del Rol de Jefatura del Sheriff
-  const ROL_JEFATURA_SHERIFF_ID = "1573098217686438088";
+  const ROL_JEFATURA_SHERIFF_ID = "1573098131812524173";
 
   const payload = {
     username: "DESPACHO CENTRAL // BLAINE COUNTY SHERIFF'S OFFICE",
-    avatar_url: "https://cdn.discordapp.com/attachments/1543495355318927392/1545704842108866630/logofdnnewgen2.png",
+    avatar_url: "https://cdn.discordapp.com/attachments/1573129337744396378/1573138685195456602/logo_sheriff.png",
     content: `🛡️ **NOTIFICACIÓN DE POSTULACIÓN / LEGAJO DE SERVICIO** <@&${ROL_JEFATURA_SHERIFF_ID}>`,
     embeds: [
       {
