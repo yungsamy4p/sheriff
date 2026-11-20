@@ -1,18 +1,18 @@
-/* CODIGO ABIERTO BY YUNG SAMY - ADAPTADO AL USMS PARA MYSTICOS RP
+/* CODIGO ABIERTO BY YUNG SAMY - ADAPTADO AL SHERIFF PARA MYSTICOS RP
    DISCORD: likeadversario
    GITHUB: https://github.com/yungsamy4p/fdn-portal
    INSTAGRAM: https://www.instagram.com/yungsamy4p */
 
 :root {
-  --bg-color: #080d16;             /* Fondo noche federal */
-  --panel-bg: #0f1724;            /* Fondo de paneles tácticos */
-  --border-color: #23354e;        /* Bordes azul acero */
-  --text-main: #d0d8e2;           /* Texto claro legible */
-  --accent-gold: #c5a059;         /* Dorado placa e insignias USMS */
-  --accent-gold-hover: #dfb96c;   /* Dorado brillo */
-  --usms-blue: #1a2b4c;           /* Azul institucional federal */
-  --usms-blue-light: #243d6b;     /* Azul interactivo para botones */
-  --alert-red: #8b0000;           /* Rojo de alerta procesal */
+  --bg-color: #070c09;
+  --panel-bg: #0e1812;
+  --border-color: #2d4c3b;
+  --text-main: #d8e2dc;
+  --accent-gold: #c5a059;
+  --accent-gold-hover: #dfb96c;
+  --sheriff-green: #2d4c3b;
+  --sheriff-green-light: #3b634d;
+  --alert-red: #8b0000;
 }
 
 * {
@@ -38,13 +38,13 @@ body {
   box-sizing: border-box;
 }
 
-/* ENCABEZADO TÁCTICO FEDERAL */
+/* ENCABEZADO TÁCTICO DEL CONDADO */
 .tactical-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid var(--accent-gold);
-  background-color: #09101c;
+  background-color: #050907;
   padding: 15px 30px;
   width: 100%;
   box-sizing: border-box;
@@ -116,7 +116,7 @@ body {
 
 .btn-tactical:hover {
   background: var(--accent-gold);
-  color: #080d16;
+  color: #070c09;
   box-shadow: 0 0 10px rgba(197, 160, 89, 0.45);
 }
 
@@ -167,7 +167,7 @@ body {
 /* SECCIÓN DE COMUNICADOS */
 .news-item {
   margin-bottom: 20px;
-  border-left: 3px solid var(--usms-blue-light);
+  border-left: 3px solid var(--sheriff-green-light);
   padding-left: 14px;
 }
 
@@ -185,10 +185,10 @@ body {
 
 .news-item p {
   font-size: 0.9rem;
-  color: #a2b0c2;
+  color: #9cb3a6;
 }
 
-/* FORMULARIO FEDERAL */
+/* FORMULARIO DEPARTAMENTAL */
 .input-group {
   margin-bottom: 16px;
 }
@@ -203,7 +203,7 @@ label {
 
 input, select, textarea {
   width: 100%;
-  background: #060a12;
+  background: #060b08;
   border: 1px solid var(--border-color);
   color: #fff;
   font-family: 'Share Tech Mono', monospace;
@@ -218,13 +218,13 @@ input:focus, select:focus, textarea:focus {
 }
 
 select option {
-  background: #0f1724;
+  background: #0e1812;
   color: #fff;
 }
 
 button {
   width: 100%;
-  background: var(--usms-blue);
+  background: var(--sheriff-green);
   color: #fff;
   border: 1px solid var(--accent-gold);
   font-family: 'Teko', sans-serif;
@@ -236,10 +236,10 @@ button {
 }
 
 button:hover {
-  background: var(--usms-blue-light);
+  background: var(--sheriff-green-light);
   border-color: var(--accent-gold-hover);
   color: #fff;
-  box-shadow: 0 0 10px rgba(36, 61, 107, 0.6);
+  box-shadow: 0 0 10px rgba(59, 99, 77, 0.6);
 }
 
 .status-msg {

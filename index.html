@@ -1,39 +1,34 @@
-<!-- CODIGO ABIERTO POR YUNG SAMY - ADAPTADO AL USMS PARA MYSTICOS RP
-     DISCORD: likeadversario
-     GITHUB: https://github.com/yungsamy4p/fdn-portal
-     INSTAGRAM: https://www.instagram.com/yungsamy4p -->
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>USMS // UNITED STATES MARSHALS SERVICE</title>
+  <title>BCSO // BLAINE COUNTY SHERIFF'S OFFICE</title>
 
-  <link rel="icon" type="image/png" href="USMS.png">
+  <link rel="icon" type="image/png" href="logo.png">
 
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Teko:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- ENCABEZADO TÁCTICO FEDERAL -->
+  <!-- ENCABEZADO TÁCTICO DEL CONDADO -->
   <header class="tactical-header">
     <!-- BLOQUE IZQUIERDO -->
     <div class="logo-area">
-      <img src="USMS.png" alt="Insignia U.S. Marshals" class="insignia-img">
+      <img src="logo.png" alt="Insignia Blaine County Sheriff's Office" class="insignia-img">
       <div>
-        <h1>UNITED STATES MARSHALS SERVICE</h1>
-        <p class="subtitle">DISTRITO JUDICIAL DE MYSTICOS RP • DESPACHO CENTRAL</p>
+        <h1>BLAINE COUNTY SHERIFF'S OFFICE</h1>
+        <p class="subtitle">CONDADO DE BLAINE • MYSTICOS RP • DESPACHO CENTRAL</p>
       </div>
     </div>
 
     <!-- BLOQUE DERECHO -->
     <div class="header-actions">
       <a href="https://mysticos-rp-1.gitbook.io/normativa-oficial-mysticos-rp" target="_blank"
-        class="btn-tactical">REGLAMENTO Y PROTOCOLOS FEDERALES</a>
+        class="btn-tactical">REGLAMENTO Y PROTOCOLOS</a>
       <div class="status-indicator">
-        <span class="blink">●</span> RED FEDERAL ACTIVA
+        <span class="blink">●</span> RED DEPARTAMENTAL ACTIVA
       </div>
     </div>
   </header>
@@ -41,18 +36,18 @@
   <main class="container">
     <!-- SECCIÓN DE TRANSMISIONES -->
     <section class="panel news-panel">
-      <h2 class="panel-title">[01] ORDENANZA Y COMUNICADOS FEDERALES</h2>
+      <h2 class="panel-title">[01] ORDENANZA Y COMUNICADOS DEL CONDADO</h2>
       
       <article class="news-item">
         <span class="news-date">2026.09.14 // 1800 HRS</span>
-        <h3>DESPLIEGUE OPERATIVO Y RECLUTAMIENTO FEDERAL</h3>
-        <p>Por directiva de la Supervisión y Dirección del Distrito, se da inicio formal al reclutamiento y acreditación de nuevos Deputy U.S. Marshals. Todo aspirante u oficial comisionado en el escalafón federal debe asentar su legajo y foja de servicio de inmediato a través de los canales tácticos enlazados.</p>
+        <h3>DESPLIEGUE OPERATIVO Y RECLUTAMIENTO DEL SHERIFF</h3>
+        <p>Por directiva de la Jefatura del Sheriff, se da inicio formal al reclutamiento y acreditación de nuevos efectivos para el Blaine County Sheriff's Office. Todo aspirante u oficial comisionado en el escalafón debe asentar su postulación y legajo de servicio a través de los canales oficiales enlazados.</p>
       </article>
 
       <article class="news-item">
         <span class="news-date">2026.09.14 // 1830 HRS</span>
-        <h3>INTEGRACIÓN Y PROTOCOLO DE DIVISIONES ESPECIALES</h3>
-        <p>Las unidades operativas de captura de fugitivos, traslados penitenciarios y operaciones tácticas especiales han quedado formalmente unificadas bajo el sistema de despacho central. Todo el arsenal y logística táctica se encuentra en estado de alistamiento y auditoría.</p>
+        <h3>ESTRUCTURA DE DIVISIONES OPERATIVAS ACTIVAS</h3>
+        <p>Las divisiones PSD (Professional Standards Division), TB (Training Bureau), SERT (Sheriff Emergency Response Team) y SOD (Aero Bureau) operan bajo el sistema central de despacho y coordinación del condado en Mysticos RP.</p>
       </article>
     </section>
 
@@ -74,18 +69,16 @@
         <div class="input-group">
           <label for="division">DIVISIÓN / ASIGNACIÓN SOLICITADA</label>
           <select id="division" required>
-            <option value="PSD">PSD - PATROL DIVISION (PREVENCIÓN Y RESPUESTA)</option>
-            <option value="FTF">FTF - FUGITIVE TASK FORCE (CUSTODIA Y BÚSQUEDA)</option>
-            <option value="CNT">CNT - NARCOTICS INVESTIGATOR (INVESTIGACIÓN Y NARCÓTICOS)</option>
-            <option value="SOG">SOG - SPECIAL OPERATIONS GROUP (FUERZAS TÁCTICAS)</option>
-            <option value="K9">K-9 UNIT (UNIDAD CANINA FEDERAL)</option>
-            <option value="ASD">ASD - AIR SUPPORT DIVISION (DESPLIEGUE AÉREO)</option>
+            <option value="PSD">PSD — PROFESSIONAL STANDARDS DIVISION</option>
+            <option value="TB">TB — TRAINING BUREAU</option>
+            <option value="SERT">SERT — SHERIFF EMERGENCY RESPONSE TEAM</option>
+            <option value="SOD">SOD — AERO BUREAU</option>
           </select>
         </div>
 
         <div class="input-group">
           <label for="motivation">DECLARACIÓN DE INTENCIONES / EXPERIENCIA PREVIA</label>
-          <textarea id="motivation" rows="4" placeholder="Indique sus capacidades operativas, antecedentes de servicio y motivos para incorporarse al United States Marshals Service..." required></textarea>
+          <textarea id="motivation" rows="4" placeholder="Indique sus capacidades operativas, antecedentes de servicio y motivos para incorporarse al Blaine County Sheriff's Office..." required></textarea>
         </div>
 
         <button type="submit" id="submitBtn">TRANSMITIR SOLICITUD AL DESPACHO</button>

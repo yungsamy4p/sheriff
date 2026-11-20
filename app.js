@@ -1,9 +1,9 @@
-// CODIGO ABIERTO BY YUNG SAMY - ADAPTADO AL USMS PARA MYSTICOS RP
+// CODIGO ABIERTO BY YUNG SAMY - ADAPTADO AL SHERIFF PARA MYSTICOS RP
 // DISCORD: likeadversario
 // GITHUB: https://github.com/yungsamy4p/fdn-portal
 // INSTAGRAM: https://www.instagram.com/yungsamy4p
 
-const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1549160935011127407/d0Tx7icC44tqc3a8awAAUHRXLZXt-iEGn9eSgawlP5mruHrWxtpTS_2sdJgDumq2Qlg5";
+const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1573149300622499932/icxVVeIRR6c8f1Y2bqud2aSrFThb2yg8vViNsKn3H14_MHcJ65e5bhbwZnqKkIcMdqV4";
 
 document.getElementById('enlistForm').addEventListener('submit', async function (e) {
   e.preventDefault();
@@ -17,21 +17,21 @@ document.getElementById('enlistForm').addEventListener('submit', async function 
   const motivation = document.getElementById('motivation').value;
 
   submitBtn.disabled = true;
-  submitBtn.innerText = "TRANSMITIENDO EXPEDIENTE FEDERAL...";
+  submitBtn.innerText = "TRANSMITIENDO EXPEDIENTE AL CONDADO...";
   statusMsg.innerText = "";
 
-  // ID ti Rol ti Superbision / Direksion ti Distrito ti USMS
-  const ROL_SUPERVISION_USMS_ID = "1543494767063736370";
+  // ID del Rol de Jefatura del Sheriff
+  const ROL_JEFATURA_SHERIFF_ID = "1573098217686438088";
 
   const payload = {
-    username: "DESPACHO CENTRAL // U.S. MARSHALS SERVICE",
-    avatar_url: "https://cdn.discordapp.com/attachments/1543495355318927392/1545704842108866630/logofdnnewgen2.png", // Masukatan iti logo ti USMS
-    content: `⚖️ **NOTIFICACIÓN DE POSTULACIÓN / LEGAJO DE SERVICIO** <@&${ROL_SUPERVISION_USMS_ID}>`,
+    username: "DESPACHO CENTRAL // BLAINE COUNTY SHERIFF'S OFFICE",
+    avatar_url: "https://cdn.discordapp.com/attachments/1543495355318927392/1545704842108866630/logofdnnewgen2.png",
+    content: `🛡️ **NOTIFICACIÓN DE POSTULACIÓN / LEGAJO DE SERVICIO** <@&${ROL_JEFATURA_SHERIFF_ID}>`,
     embeds: [
       {
-        title: "⭐ NUEVA SOLICITUD DE ADHESIÓN AL USMS RECIBIDA",
-        description: "Se ha radicado un nuevo expediente de postulación para incorporarse al **United States Marshals Service** en el Distrito Judicial de Mysticos RP.",
-        color: 0x1a2b4c, // Maris asul a pederal ti USMS (#1a2b4c)
+        title: "NUEVA SOLICITUD DE ADHESIÓN AL SHERIFF RECIBIDA",
+        description: "Se ha radicado un nuevo expediente de postulación para incorporarse al **Blaine County Sheriff's Office** en el Condado de Blaine • Mysticos RP.",
+        color: 0x2d4c3b,
         fields: [
           { name: "👤 Identificador / Nombre IC", value: `\`${callsign}\``, inline: true },
           { name: "📋 Contacto de Discord", value: `\`${discord}\``, inline: true },
@@ -39,7 +39,7 @@ document.getElementById('enlistForm').addEventListener('submit', async function 
           { name: "📜 Declaración de Intenciones / Antecedentes", value: motivation, inline: false }
         ],
         footer: {
-          text: "United States Marshals Service • Registro Procesal Automático | Mysticos RP"
+          text: "Blaine County Sheriff's Office • Registro Departamental Automático | Mysticos RP"
         },
         timestamp: new Date().toISOString()
       }
@@ -55,14 +55,14 @@ document.getElementById('enlistForm').addEventListener('submit', async function 
 
     if (response.ok) {
       statusMsg.style.color = "#55ff55";
-      statusMsg.innerText = "TRANSMISIÓN EXITOSA: Su expediente ha sido remitido formalmente a la Supervisión del USMS.";
+      statusMsg.innerText = "TRANSMISIÓN EXITOSA: Su expediente ha sido remitido formalmente a la Jefatura del Sheriff.";
       document.getElementById('enlistForm').reset();
     } else {
       throw new Error("Fallo en la respuesta del servidor");
     }
   } catch (error) {
     statusMsg.style.color = "#ff5555";
-    statusMsg.innerText = "ERROR CRÍTICO: No se pudo enlazar con la terminal central de datos del USMS.";
+    statusMsg.innerText = "ERROR CRÍTICO: No se pudo enlazar con la terminal central de datos del Sheriff.";
   } finally {
     submitBtn.disabled = false;
     submitBtn.innerText = "TRANSMITIR SOLICITUD AL DESPACHO";
